@@ -7,11 +7,11 @@ app.set("view engine","pug")
 app.set("views", __dirname);
 app.get('/', function (req, res) {
     res.render("template", {
-        heading: "Welcome",
-        content: "John Doe is a Toronto-based creative",
-        label: "Contact John",
+        heading: "Npm Testing Webpage",
+        content: "This is Qingyuan's first npm project",
+        label: "Contact Qingyuan for More Information",
         url:"/contact",
-        title: "Welcome to John Doe's Website"
+        title: "Hey, Welcome to Qingyuan's Website"
     })
     // res.sendFile(__dirname+"/home.html");
 })
@@ -19,11 +19,11 @@ app.get('/', function (req, res) {
 
 app.get('/contact', function(req,res){
     res.render("template", {
+        title: "How to Reach Out for Qingyuan",
         heading: "Contact information",
-        content: "Please contact me through Email",
-        label: "Contact John",
-        url:"johndoe@gmail.com",
-        title: "John Doe's Personal informaiton"
+        content: "Please contact me through the following methods",
+        label:"Via Email",
+        url:"qingyuan1998@hotmail.com",
     })
 })
 
